@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300;400&family=Roboto+Mono:wght@200&display=swap');
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn2.civitatis.com/estados-unidos/nueva-york/galeria/big/madison-square-garden-arena-bowl-knicks.jpg);
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.651);
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+.cont-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+}
+
+.titulo{
+    width: 50%;
+}
+.logo{
+    width: 5%;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+    margin-left: 5px;
+    color: white;
+    border-bottom: solid white 3px;
+}
+
+.section-tickets{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image:url(assets/madison-square-garden-728.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo-tickets{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedor-tickets, .texto-1{
+    width: 50%;
+    height: 100%;
+}
+
+.lakers, .cleveland, .Newyork, .Utah, .washington{
+    width: 9rem;
+    height: 8rem;
+}
+
+
+.tickets-1, .tickets-2, .tickets-3, .tickets-4{
+    width: 100%;
+    height: 20vh;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.6s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.versus{
+    color: whitesmoke;
+}
+
+.tickets-1:hover .datos-partido, .tickets-2:hover .datos-partido, .tickets-3:hover .datos-partido, .tickets-4:hover .datos-partido{
+    background-color: #E96F33;
+    cursor: pointer;
+    color: white;
+    transform: scale(1);
+}
+
+.datos-partido{
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    transform: scale(0);
+    transition: all 0.3s;
+    flex-direction: column;
+}
+
+.button-buy{
+    width: 100%;
+    height: 25%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.texto-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    }
+
+.experience{
+    color: #E96F33;
+    border: 2px solid #E96F33;
+    width: 50%;
+    background-color:  rgba(0, 0, 0, 0.63) ;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.eastern-conferemce{
+    width: 30vh;
+    height: 30vh;
+}
+
+.section-shop{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #23305E;
+}
+
+.title-shop{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.products{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.T-shirts, .Shorts, .hoodies, .long-pants{
+    width: 50vh;
+    height: 58vh;
+    margin:30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: solid black 5px;
+}
+
+.button-buy2{
+    width: 100%;
+    height: 16.8%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.price{
+    text-align: center;
+    
+}
+
+.remera, .pantalon-corto, .pantalon-largo, .buzo{
+    width: 40vh;
+    height: 40vh;
+    margin-top: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+
+label{
+    width: 100%;
+    margin: 5px;
+}
+
+.form-contactanos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    width: 50%;
+    display: flex;
+
+}
+
+.cont-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-instagram, .fa-tiktok, .fa-twitch, .fa-twitter{
+    font-size: 2rem;
+    
+}
+
+.form-contactanos{
+    width: 50%;
+    
+}
+
+.text-area1{
+    width: 40vw;
+}
+
+@media (max-width:1440px){
+
+    .logo{
+        width: 7%;
+        height: 100%;
+    }
+
+    .datos-partido{
+        height: 7rem;
+        z-index: 10;
+    }
+
+    .button-buy{
+        height: 20%;
+    }
+
+    .lakers, .cleveland, .Newyork, .Utah, .washington{
+        width: 25%;
+        height: 100%;
+    }
+
+    .T-shirts, .hoodies, .Shorts, .long-pants{
+        width: 13rem;
+        
+    }
+    
+    .remera, .buzo, .pantalon-corto, .pantalon-largo{
+        width: 100%;
+        height: 60%;
+    }
+
+    .button-buy2{
+        height: 12.5vh;
+    }
+
+    .cont-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo{
+        width: 10%;
+        height: 100%;
+    }
+
+    .titulo{
+        width: 70%;
+    }
+    
+    .lakers, .cleveland, .newyork, .Utah, .washington{
+        width: 25%;
+        height: 100%;
+    }
+
+    .experience{
+        width: 60%;
+        height: 40%;
+    }
+
+    .title-shop{
+        font-size: 2rem;
+    }
+
+    .T-shirts, .hoodies, .Shorts, .long-pants{
+        height: 65%;
+        
+    }
+
+    .remera, .buzo, .pantalon-corto, .pantalon-largo{
+        width: 100%;
+        height: 10.5rem;
+    }
+
+    .fa-instagram, .fa-tiktok, .fa-twitch, .fa-twitter{
+        font-size: 1.5rem;
+    }
+
+    .cont-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 425px){
+
+    .logo{
+        width: 15%;
+        height: 80%;
+        margin: 5px;
+    }
+
+    .titulo{
+        width: 80%;
+    }
+    
+    .section-tickets{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-tickets{
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .eastern-conferemce{
+        display: none;
+    }
+
+    .contenedor-tickets{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .tickets-1, .tickets-2, .tickets-3, .tickets-4{
+        width: 90%;
+    }
+
+    .lakers, .cleveland, .newyork, .Utah, .washington{
+        width: 25%;
+        height: 100%;
+    }
+
+    .experience{
+        width: 100%;
+        height: 30%;
+        font-size: 2rem;
+    }
+
+    .section-shop{
+        height: 120vh;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .T-shirts, .hoodies, .Shorts, .long-pants{
+        display: flex;
+        flex-direction:row;
+        width: 70%;
+        height: 20%;
+        border: black solid 3px;
+
+    }
+
+    .remera, .buzo, .pantalon-corto, .pantalon-largo{
+        width: 25%;
+        height: 80%
+    }
+
+    .button-buy2{
+        width: 25%;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .cont-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:320px){
+    .navbar{
+        font-size: .8rem;
+    }
+
+    .logo{
+        width: 10%;
+        height: 60%;
+        margin: 5px;
+    }
+
+    .titulo{
+        width: 90%;
+    }
+
+    .lakers, .cleveland, .newyork, .Utah, .washington{
+        width: 25%;
+        height: 100%;
+    }
+
+    .cont-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+

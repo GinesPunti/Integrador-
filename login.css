@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@300;400&family=Roboto+Mono:wght@200&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(assets/peakpx.jpg);
+    background-position: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-container{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+form{
+    width: 100%;
+    height: 80%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+.password, .text, .submit{
+    width: 100%;
+    height: 2rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: #b3b2b09d;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: #006CB6;
+}
+
+.label-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.cont-photos{
+    margin-top: 1rem;
+}
+
+.fa-instagram, .fa-tiktok, .fa-twitch, .fa-twitter{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+a{
+    color:black
+}
+
+
+
+@media (max-width: 1024px){
+    body{
+        background-size: cover;
+    }
+
+    label{
+        width: 100%;
+        
+    }
+
+    .p-checkbox{
+        font-size: .8rem;
+    }
+
+    .checkbox{
+        width: 5%;
+    }
+}
+
+
+@media (max-width:768px){
+
+    body{
+        background-size: cover;
+    }
+
+    .main-container{
+        width: 35%;
+    }
+}
+
+@media (max-width:425px){
+
+    .main-container{
+        width: 55%;
+    }
+}
+
+@media (max-width: 375px){
+
+    .main-container{
+        width: 62%;
+    }
+}
+
+
+@media (max-width: 320px){
+    .main-container{
+        width: 72%;
+    }
+            
+    .fa-instagram,.fa-twitter,.fa-tiktok,.fa-twitch{
+        font-size: 1.3rem;
+    }
+
+}
